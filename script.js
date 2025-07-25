@@ -1,0 +1,1 @@
+// Portfolio JS - ready for future enhancements 

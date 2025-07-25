@@ -1,0 +1,301 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f6ff; /* light blue background */
+    color: #1a237e; /* deep blue text */
+}
+nav {
+    background: #1976d2; /* blue nav */
+    padding: 1em 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+nav ul li {
+    margin: 0 1em;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+nav ul li a:hover {
+    color: #bbdefb; /* lighter blue on hover */
+    text-decoration: underline;
+}
+main {
+    max-width: 700px;
+    margin: 2em auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+.about h1 {
+    margin-top: 0;
+    color: #1976d2;
+    text-align: center;
+}
+.about h1, .projects h1, .contact h1 {
+    margin-top: 0;
+    color: #1976d2;
+}
+.profile-pic {
+    display: block;
+    margin: 0 auto 1.5em auto;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #1976d2;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.12);
+    background: #fff;
+}
+.skills {
+    margin-top: 2.5em;
+    text-align: center;
+}
+.skills h2 {
+    color: #1976d2;
+    margin-bottom: 1.5em;
+}
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+}
+.skill-card {
+    background: #f5faff;
+    border: 1px solid #e3eafc;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.04);
+    padding: 1.2em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 110px;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+.skill-card:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 6px 18px rgba(25, 118, 210, 0.10);
+}
+.skill-card i {
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
+    color: #1976d2;
+}
+.skill-card span {
+    font-size: 1.1em;
+    color: #1a237e;
+    font-weight: 500;
+}
+html {
+    scroll-behavior: smooth;
+}
+section {
+    margin-bottom: 3em;
+}
+@media (max-width: 800px) {
+    .skills-grid {
+        gap: 1em;
+    }
+    .skill-card {
+        padding: 1em 1.2em;
+        min-width: 90px;
+    }
+}
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 0.5em 0;
+    }
+    main {
+        padding: 1em;
+        margin: 1em;
+    }
+    .skills-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill-card {
+        width: 80vw;
+        min-width: unset;
+    }
+}
+.contact {
+    background: linear-gradient(135deg, #6a82fb 0%, #5f2c82 100%);
+    padding: 3em 0 4em 0;
+    border-radius: 16px;
+    color: #fff;
+    margin-bottom: 0;
+}
+.contact h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+    text-align: center;
+}
+.contact-subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 2.5em;
+    color: #e0e0e0;
+}
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.contact-card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 2em 3em 1.5em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    min-width: 180px;
+    min-height: 160px;
+    transition: transform 0.18s, box-shadow 0.18s, background 0.18s;
+    font-size: 1.1em;
+}
+.contact-card:hover {
+    background: rgba(255,255,255,0.18);
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.14);
+}
+.contact-card i {
+    font-size: 2.8em;
+    margin-bottom: 0.7em;
+    color: #fff;
+    filter: drop-shadow(0 2px 8px rgba(90, 90, 255, 0.12));
+}
+.contact-card span {
+    font-size: 1.15em;
+    font-weight: 500;
+    margin-top: 0.2em;
+}
+@media (max-width: 900px) {
+    .contact-grid {
+        gap: 1.2em;
+    }
+    .contact-card {
+        padding: 1.5em 1.5em 1.2em 1.5em;
+        min-width: 140px;
+        min-height: 120px;
+    }
+}
+@media (max-width: 600px) {
+    .contact {
+        padding: 2em 0 2.5em 0;
+        border-radius: 10px;
+    }
+    .contact-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+    .contact-card {
+        width: 80vw;
+        min-width: unset;
+        min-height: 90px;
+        padding: 1em 0.5em;
+    }
+} 
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    margin-top: 2em;
+}
+.project-card {
+    background: linear-gradient(135deg, #f5faff 60%, #e3eafc 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(25, 118, 210, 0.08);
+    padding: 2em 1.5em 1.5em 1.5em;
+    width: 320px;
+    margin-bottom: 2em;
+    text-align: center;
+    transition: transform 0.18s, box-shadow 0.18s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(25, 118, 210, 0.14);
+}
+.project-icon {
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: #1976d2;
+}
+.project-card h3 {
+    margin: 0.5em 0 0.7em 0;
+    color: #1a237e;
+}
+.project-card p {
+    color: #333;
+    font-size: 1.05em;
+    margin-bottom: 1.2em;
+}
+.project-tags {
+    margin-bottom: 1em;
+}
+.tag {
+    display: inline-block;
+    background: #e3eafc;
+    color: #1976d2;
+    border-radius: 12px;
+    padding: 0.3em 0.9em;
+    margin: 0 0.2em 0.3em 0.2em;
+    font-size: 0.95em;
+    font-weight: 500;
+}
+.tag.flutter { color: #02569B; background: #e3f2fd; }
+.tag.firebase { color: #FFCA28; background: #fff8e1; }
+.tag.html { color: #e44d26; background: #fbeee6; }
+.tag.css { color: #2965f1; background: #e6f0fb; }
+.tag.js { color: #f7df1e; background: #fffbe6; }
+.project-link {
+    display: inline-block;
+    margin-top: 0.5em;
+    color: #fff;
+    background: #1976d2;
+    padding: 0.5em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.18s;
+}
+.project-link:hover {
+    background: #1565c0;
+}
+@media (max-width: 1100px) {
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        width: 90vw;
+        max-width: 400px;
+    }
+} 
